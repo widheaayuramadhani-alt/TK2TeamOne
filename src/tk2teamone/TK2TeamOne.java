@@ -40,6 +40,19 @@ public class TK2TeamOne {
         System.out.println("Rasa : " + Jeruk.getRasa());
         System.out.println("Harga : " + Jeruk.getHarga());
         System.out.println("====================\n");
+        
+        //Bagian Najwa
+        BuahMelon Melon = new BuahMelon("Melon sakata","Hijau","Manis","Rp25.000/kg");
+        Melon.setJenis("Cenery");
+        Melon.setWarna("Kuning");
+        Melon.setRasa("Manis");
+        Melon.setHarga("Rp30.000/kg");
+        System.out.println("=====MELON - NAJWA=====");
+        System.out.println("Jenis : " + Melon.getJenis());
+        System.out.println("Warna : " + Melon.getWarna());
+        System.out.println("Rasa : " + Melon.getRasa());
+        System.out.println("Harga : "+ Melon.getHarga());
+        System.out.println("=======================\n");
     }
     
 }
