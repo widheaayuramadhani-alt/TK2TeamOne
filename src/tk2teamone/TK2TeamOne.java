@@ -27,7 +27,19 @@ public class TK2TeamOne {
         System.out.println("Rasa : " + Mangga.getRasa());
         System.out.println("Harga : " + Mangga.getHarga());
         System.out.println("=======================\n");
-                
+        
+        //Bagian Athoil
+        BuahJeruk Jeruk = new BuahJeruk("Jeruk nipis","Hijau","Asam","Rp7.000/kg");
+        Jeruk.setJenis("Bali");
+        Jeruk.setWarna("Hijau kekuningan");
+        Jeruk.setRasa("Manis");
+        Jeruk.setHarga("Rp65.000/kg");
+        System.out.println("=====JERUK - ATHOIL=====");
+        System.out.println("Jenis : " + Jeruk.getJenis());
+        System.out.println("Warna : " + Jeruk.getWarna());
+        System.out.println("Rasa : " + Jeruk.getRasa());
+        System.out.println("Harga : " + Jeruk.getHarga());
+        System.out.println("====================\n");
     }
     
 }
