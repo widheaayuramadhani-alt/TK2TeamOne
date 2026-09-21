@@ -53,6 +53,19 @@ public class TK2TeamOne {
         System.out.println("Rasa : " + Melon.getRasa());
         System.out.println("Harga : "+ Melon.getHarga());
         System.out.println("=======================\n");
+        
+        //Bagian Tony
+        BuahKiwi Kiwi = new BuahKiwi("Green Kiwi", "Hijau", "Manis Asam", "Rp15.000/Buah");
+        Kiwi.setJenis("Kiwi Gold");
+        Kiwi.setWarna("Kuning Keemasan");
+        Kiwi.setRasa("Manis");
+        Kiwi.setHarga("25.000/Buah");
+        System.out.println("=====KIWI - TONY=====");
+        System.out.println("Jenis : " + Kiwi.getJenis());
+        System.out.println("Warna : " + Kiwi.getWarna());
+        System.out.println("Rasa : " + Kiwi.getRasa());
+        System.out.println("Harga : " + Kiwi.getHarga());
+        System.out.println("=======================\n");
     }
     
 }
