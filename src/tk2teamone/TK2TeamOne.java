@@ -66,6 +66,19 @@ public class TK2TeamOne {
         System.out.println("Rasa : " + Kiwi.getRasa());
         System.out.println("Harga : " + Kiwi.getHarga());
         System.out.println("=======================\n");
+        
+        // Bagian Hamdan
+        BuahSemangka Semangka= new BuahSemangka("Inul", "Merah", "Manis berair", "Rp20.000/Kg");
+        Semangka.setJenis("Semangka Merah");
+        Semangka.setWarna("Merah");
+        Semangka.setRasa("Manis berair");
+        Semangka.setHarga("Rp20.000/Kg");
+        System.out.println("=====SEMANGKA - HAMDAN=====");
+        System.out.println("Jenis : "+ Semangka.getJenis());
+        System.out.println("Warna : "+ Semangka.getWarna());
+        System.out.println("Rasa ; "+ Semangka.getRasa());
+        System.out.println("Harga ; "+ Semangka.getHarga());
+        System.out.println("=======================\n");
     }
     
 }
