@@ -79,6 +79,20 @@ public class TK2TeamOne {
         System.out.println("Rasa ; "+ Semangka.getRasa());
         System.out.println("Harga ; "+ Semangka.getHarga());
         System.out.println("=======================\n");
+        
+        // Bagian Ala
+        BuahDurian Durian = new BuahDurian("Durian Montong", "Kuning Gading Pekat", "Dominan Manis", "Rp95.000/Kg");
+        Durian.setJenis("Durian Musang King");
+        Durian.setWarna("Kuning Keemasan");
+        Durian.setRasa("Manis Pahit");
+        Durian.setHarga("Rp250.000/Kg");
+        System.out.println("======DURIAN - ALA=======");
+        System.out.println("Jenis : "+ Durian.getJenis());
+        System.out.println("Warna : "+ Durian.getWarna());
+        System.out.println("Rasa : "+ Durian.getRasa());
+        System.out.println("Harga : "+ Durian.getHarga());
+        System.out.println("=========================");
+        
     }
     
 }
