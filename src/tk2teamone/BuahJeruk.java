@@ -13,6 +13,13 @@ public class BuahJeruk {
     String warna;
     String rasa;
     String harga;
+    
+    public BuahJeruk() {
+        this.jenis = "";
+        this.warna = "";
+        this.rasa = "";
+        this.harga = "";
+    }
 
     public BuahJeruk(String jenis, String warna, String rasa, String harga) {
         this.jenis = jenis;
