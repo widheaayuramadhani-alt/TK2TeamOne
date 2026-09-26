@@ -87,10 +87,18 @@ public class FrameJeruk extends javax.swing.JFrame {
         tRasa.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tRasa.setText("jTextField1");
         tRasa.addActionListener(this::tRasaActionPerformed);
+        tRasa.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tRasaKeyReleased(evt);
+            }
+        });
 
         tJenis.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tJenis.setText("jTextField1");
         tJenis.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tJenisKeyReleased(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 tJenisKeyTyped(evt);
             }
@@ -99,10 +107,20 @@ public class FrameJeruk extends javax.swing.JFrame {
         tWarna.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tWarna.setText("jTextField1");
         tWarna.addActionListener(this::tWarnaActionPerformed);
+        tWarna.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tWarnaKeyReleased(evt);
+            }
+        });
 
         tHarga.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tHarga.setText("jTextField1");
         tHarga.addActionListener(this::tHargaActionPerformed);
+        tHarga.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tHargaKeyReleased(evt);
+            }
+        });
 
         bSimpan.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         bSimpan.setText("Simpan");
@@ -298,6 +316,31 @@ public class FrameJeruk extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_tJenisKeyTyped
+
+    private void tJenisKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tJenisKeyReleased
+        // TODO add your handling code here:
+        bj.setJenis(tJenis.getText());
+        oJenis.setText(bj.getJenis());
+
+    }//GEN-LAST:event_tJenisKeyReleased
+
+    private void tWarnaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tWarnaKeyReleased
+        // TODO add your handling code here:
+        bj.setWarna(tWarna.getText());
+        oWarna.setText(bj.getJenis());
+    }//GEN-LAST:event_tWarnaKeyReleased
+
+    private void tRasaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tRasaKeyReleased
+        // TODO add your handling code here:
+        bj.setRasa(tRasa.getText());
+        oRasa.setText(bj.getJenis());
+    }//GEN-LAST:event_tRasaKeyReleased
+
+    private void tHargaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tHargaKeyReleased
+        // TODO add your handling code here:
+        bj.setHarga(tHarga.getText());
+        oHarga.setText(bj.getJenis());
+    }//GEN-LAST:event_tHargaKeyReleased
 
     /**
      * @param args the command line arguments
