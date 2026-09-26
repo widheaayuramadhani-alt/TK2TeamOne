@@ -14,6 +14,12 @@ public class BuahMangga {
     String rasa;
     String harga;
 
+    public BuahMangga() {
+        this.jenis = "";
+        this.warna = "";
+        this.rasa = "";
+        this.harga = "";
+    }
     public BuahMangga(String jenis, String warna, String rasa, String harga) {
         this.jenis = jenis;
         this.warna = warna;
