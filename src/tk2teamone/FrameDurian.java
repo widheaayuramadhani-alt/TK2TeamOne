@@ -325,20 +325,20 @@ public class FrameDurian extends javax.swing.JFrame {
 
     private void tWarnaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tWarnaKeyReleased
         // TODO add your handling code here:
-        bd.setWarna(tJenis.getText());
+        bd.setWarna(tWarna.getText());
         oWarna.setText(bd.getWarna());
     }//GEN-LAST:event_tWarnaKeyReleased
 
     private void tRasaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tRasaKeyReleased
         // TODO add your handling code here:
-        bd.setRasa(tJenis.getText());
-        oWarna.setText(bd.getRasa());
+        bd.setRasa(tRasa.getText());
+        oRasa.setText(bd.getRasa());
     }//GEN-LAST:event_tRasaKeyReleased
 
     private void tHargaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tHargaKeyReleased
         // TODO add your handling code here:
-        bd.setHarga(tJenis.getText());
-        oWarna.setText(bd.getHarga());
+        bd.setHarga(tHarga.getText());
+        oHarga.setText(bd.getHarga());
     }//GEN-LAST:event_tHargaKeyReleased
 
     /**
