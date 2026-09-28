@@ -327,19 +327,19 @@ public class FrameJeruk extends javax.swing.JFrame {
     private void tWarnaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tWarnaKeyReleased
         // TODO add your handling code here:
         bj.setWarna(tWarna.getText());
-        oWarna.setText(bj.getJenis());
+        oWarna.setText(bj.getWarna());
     }//GEN-LAST:event_tWarnaKeyReleased
 
     private void tRasaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tRasaKeyReleased
         // TODO add your handling code here:
         bj.setRasa(tRasa.getText());
-        oRasa.setText(bj.getJenis());
+        oRasa.setText(bj.getRasa());
     }//GEN-LAST:event_tRasaKeyReleased
 
     private void tHargaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tHargaKeyReleased
         // TODO add your handling code here:
         bj.setHarga(tHarga.getText());
-        oHarga.setText(bj.getJenis());
+        oHarga.setText(bj.getHarga());
     }//GEN-LAST:event_tHargaKeyReleased
 
     /**
