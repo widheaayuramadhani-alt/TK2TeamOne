@@ -52,4 +52,10 @@ public class BuahKiwi {
         this.rasa = rasa;
         this.harga = harga;
     }
+    public BuahKiwi() {
+        this.jenis = "";
+        this.warna = "";
+        this.rasa = "";
+        this.harga = "";
+    }
 }
