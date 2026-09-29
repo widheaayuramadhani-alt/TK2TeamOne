@@ -260,8 +260,8 @@ public class FrameDurian extends javax.swing.JFrame {
                 .addGap(0, 357, Short.MAX_VALUE))
             .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                    .addGap(0, 152, Short.MAX_VALUE)
-                    .addComponent(tRasa, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(0, 151, Short.MAX_VALUE)
+                    .addComponent(tRasa, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -350,7 +350,8 @@ public class FrameDurian extends javax.swing.JFrame {
         jPanel12.add(jLabel13);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel14.setText("Harga / kg    :");
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel14.setText("Harga           :");
         jPanel12.add(jLabel14);
 
         jPanel11.add(jPanel12, java.awt.BorderLayout.LINE_START);
