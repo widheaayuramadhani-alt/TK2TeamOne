@@ -4,6 +4,10 @@
  */
 package tk2teamone;
 
+import com.formdev.flatlaf.FlatLightLaf;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 /**
  *
  * @author asus4
@@ -77,6 +81,7 @@ public class FrameBeranda extends javax.swing.JFrame {
         jPanel2.setPreferredSize(new java.awt.Dimension(448, 383));
         jPanel2.setLayout(new java.awt.GridLayout(2, 3));
 
+        btDurian.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btDurian.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2teamone/icon/btnDurian.png"))); // NOI18N
         btDurian.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -85,6 +90,7 @@ public class FrameBeranda extends javax.swing.JFrame {
         });
         jPanel2.add(btDurian);
 
+        btMangga.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btMangga.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2teamone/icon/btnMangga.png"))); // NOI18N
         btMangga.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -93,6 +99,7 @@ public class FrameBeranda extends javax.swing.JFrame {
         });
         jPanel2.add(btMangga);
 
+        btJeruk.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btJeruk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2teamone/icon/btnJeruk.png"))); // NOI18N
         btJeruk.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -101,6 +108,7 @@ public class FrameBeranda extends javax.swing.JFrame {
         });
         jPanel2.add(btJeruk);
 
+        btMelon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btMelon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2teamone/icon/btnMelon.png"))); // NOI18N
         btMelon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -109,6 +117,7 @@ public class FrameBeranda extends javax.swing.JFrame {
         });
         jPanel2.add(btMelon);
 
+        btKiwi.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btKiwi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2teamone/icon/btnKiwi.png"))); // NOI18N
         btKiwi.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -117,6 +126,7 @@ public class FrameBeranda extends javax.swing.JFrame {
         });
         jPanel2.add(btKiwi);
 
+        btSemangka.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btSemangka.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2teamone/icon/btnSemangka.png"))); // NOI18N
         btSemangka.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -210,14 +220,11 @@ public class FrameBeranda extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
+            UIManager.setLookAndFeel(new FlatLightLaf());
+            UIManager.put("Button.arc", 15);
+            UIManager.put("Button.Borderwidth", 0);
+            UIManager.put("TextComponent.arc", 15);
+        } catch (UnsupportedLookAndFeelException unsupportedLookAndFeelException) {
         }
         //</editor-fold>
 
