@@ -312,7 +312,7 @@ public class FrameMangga extends javax.swing.JFrame {
 
         jPanel5.add(jPanel9);
 
-        jPanel3.add(jPanel5, java.awt.BorderLayout.CENTER);
+        jPanel3.add(jPanel5, java.awt.BorderLayout.LINE_START);
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 460, 250));
 
