@@ -26,7 +26,6 @@ public class FrameMangga extends javax.swing.JFrame {
     public FrameMangga() {
         initComponents();
         reset();
-        
         panelLengkung(jPanel3);
         panelLengkung(jPanel2);
     }
@@ -54,7 +53,7 @@ public class FrameMangga extends javax.swing.JFrame {
                 2f,
                 15));
     }
-
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -105,9 +104,7 @@ public class FrameMangga extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(498, 640));
-        setPreferredSize(new java.awt.Dimension(498, 640));
 
         jPanel1.setMaximumSize(new java.awt.Dimension(498, 640));
         jPanel1.setMinimumSize(new java.awt.Dimension(498, 640));
@@ -312,7 +309,7 @@ public class FrameMangga extends javax.swing.JFrame {
 
         jPanel5.add(jPanel9);
 
-        jPanel3.add(jPanel5, java.awt.BorderLayout.LINE_START);
+        jPanel3.add(jPanel5, java.awt.BorderLayout.CENTER);
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 460, 250));
 
@@ -392,11 +389,11 @@ public class FrameMangga extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -415,7 +412,7 @@ public class FrameMangga extends javax.swing.JFrame {
         BM.setWarna(tWarna.getText());
         BM.setRasa(tRasa.getText());
         BM.setHarga(tHarga.getText());
-
+        
         oJenis.setText(BM.getJenis());
         oWarna.setText(BM.getWarna());
         oRasa.setText(BM.getRasa());
@@ -426,6 +423,14 @@ public class FrameMangga extends javax.swing.JFrame {
         // TODO add your handling code here:
         reset();
     }//GEN-LAST:event_btnResetActionPerformed
+
+    private void tHargaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tHargaKeyTyped
+        // TODO add your handling code here:
+        char huruf = evt.getKeyChar();
+        if(!Character.isDigit(huruf)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tHargaKeyTyped
 
     private void tJenisKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tJenisKeyReleased
         // TODO add your handling code here:
@@ -450,14 +455,6 @@ public class FrameMangga extends javax.swing.JFrame {
         BM.setHarga(tHarga.getText());
         oHarga.setText("Rp." + BM.getHarga());
     }//GEN-LAST:event_tHargaKeyReleased
-
-    private void tHargaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tHargaKeyTyped
-        // TODO add your handling code here:
-        char huruf = evt.getKeyChar();
-        if(!Character.isDigit(huruf)){
-            evt.consume();
-        }
-    }//GEN-LAST:event_tHargaKeyTyped
 
     /**
      * @param args the command line arguments
