@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package tk2teamone;
+package views;
 
+import models.BuahSemangka;
 import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.ui.FlatLineBorder;
 import java.awt.Color;
@@ -16,21 +17,21 @@ import javax.swing.UnsupportedLookAndFeelException;
  *
  * @author Al
  */
-public class FrameKiwi extends javax.swing.JFrame {
+public class FrameSemangka extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrameKiwi.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrameSemangka.class.getName());
 
     /**
      * Creates new form FrameDurian
      */
-    public FrameKiwi() {
+    public FrameSemangka() {
         initComponents();
         reset();
         panelLengkung(jPanel3);
         panelLengkung(jPanel2);
     }
     
-    BuahKiwi bk = new BuahKiwi();
+    BuahSemangka bs = new BuahSemangka();
     
     
     void reset(){
@@ -112,13 +113,13 @@ public class FrameKiwi extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(24, 58, 92));
-        jLabel5.setText("Masukkan informasi buah kiwi");
+        jLabel5.setText("Masukkan informasi buah semangka");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 34)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(24, 58, 92));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("KIWI");
+        jLabel1.setText("Semangka");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, 40));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
@@ -128,7 +129,7 @@ public class FrameKiwi extends javax.swing.JFrame {
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 90, -1));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2teamone/icon/kiwi.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2teamone/icon/semangka.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 60, 50));
 
         btnKembali.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -408,15 +409,15 @@ public class FrameKiwi extends javax.swing.JFrame {
 
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
         // TODO add your handling code here:
-        bk.setJenis(tJenis.getText());
-        bk.setWarna(tWarna.getText());
-        bk.setRasa(tRasa.getText());
-        bk.setHarga(tHarga.getText());
+        bs.setJenis(tJenis.getText());
+        bs.setWarna(tWarna.getText());
+        bs.setRasa(tRasa.getText());
+        bs.setHarga(tHarga.getText());
         
-        oJenis.setText(bk.getJenis());
-        oWarna.setText(bk.getWarna());
-        oRasa.setText(bk.getRasa());
-        oHarga.setText("Rp." + bk.getHarga());
+        oJenis.setText(bs.getJenis());
+        oWarna.setText(bs.getWarna());
+        oRasa.setText(bs.getRasa());
+        oHarga.setText("Rp." + bs.getHarga());
     }//GEN-LAST:event_btnSimpanActionPerformed
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
@@ -434,26 +435,26 @@ public class FrameKiwi extends javax.swing.JFrame {
 
     private void tJenisKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tJenisKeyReleased
         // TODO add your handling code here:
-        bk.setJenis(tJenis.getText());
-        oJenis.setText(bk.getJenis());
+        bs.setJenis(tJenis.getText());
+        oJenis.setText(bs.getJenis());
     }//GEN-LAST:event_tJenisKeyReleased
 
     private void tWarnaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tWarnaKeyReleased
         // TODO add your handling code here:
-        bk.setWarna(tWarna.getText());
-        oWarna.setText(bk.getWarna());
+        bs.setWarna(tWarna.getText());
+        oWarna.setText(bs.getWarna());
     }//GEN-LAST:event_tWarnaKeyReleased
 
     private void tRasaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tRasaKeyReleased
         // TODO add your handling code here:
-        bk.setRasa(tRasa.getText());
-        oRasa.setText(bk.getRasa());
+        bs.setRasa(tRasa.getText());
+        oRasa.setText(bs.getRasa());
     }//GEN-LAST:event_tRasaKeyReleased
 
     private void tHargaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tHargaKeyReleased
         // TODO add your handling code here:
-        bk.setHarga(tHarga.getText());
-        oHarga.setText("Rp." + bk.getHarga());
+        bs.setHarga(tHarga.getText());
+        oHarga.setText("Rp." + bs.getHarga());
     }//GEN-LAST:event_tHargaKeyReleased
 
     /**
@@ -473,7 +474,7 @@ public class FrameKiwi extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new FrameKiwi().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new FrameSemangka().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

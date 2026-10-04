@@ -1,32 +1,18 @@
-       /*
+/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tk2teamone;
+package models;
 
 /**
  *
- * @author X1 Carbon
+ * @author macbookprom12020
  */
-public class BuahMelon {
+public class BuahKiwi {
     String jenis;
     String warna;
     String rasa;
     String harga;
-    
-    public BuahMelon (){
-        this.jenis = "";
-        this.warna = "";
-        this.rasa = "";
-        this.harga = "";
-    }
-
-    public BuahMelon(String jenis, String warna, String rasa, String harga) {
-        this.jenis = jenis;
-        this.warna = warna;
-        this.rasa = rasa;
-        this.harga = harga;
-    }
 
     public String getJenis() {
         return jenis;
@@ -59,7 +45,17 @@ public class BuahMelon {
     public void setHarga(String harga) {
         this.harga = harga;
     }
-    
-    
+
+    public BuahKiwi(String jenis, String warna, String rasa, String harga) {
+        this.jenis = jenis;
+        this.warna = warna;
+        this.rasa = rasa;
+        this.harga = harga;
+    }
+    public BuahKiwi() {
+        this.jenis = "";
+        this.warna = "";
+        this.rasa = "";
+        this.harga = "";
+    }
 }
-   

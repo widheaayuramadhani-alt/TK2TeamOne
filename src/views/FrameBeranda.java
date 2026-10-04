@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package tk2teamone;
+package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
 import javax.swing.UIManager;
@@ -54,9 +54,7 @@ public class FrameBeranda extends javax.swing.JFrame {
         jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(500, 650));
         setMinimumSize(new java.awt.Dimension(500, 650));
-        setPreferredSize(new java.awt.Dimension(510, 670));
 
         jPanel1.setMaximumSize(new java.awt.Dimension(498, 640));
         jPanel1.setMinimumSize(new java.awt.Dimension(498, 640));

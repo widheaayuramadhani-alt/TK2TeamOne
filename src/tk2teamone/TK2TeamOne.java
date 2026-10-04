@@ -4,6 +4,13 @@
  */
 package tk2teamone;
 
+import models.BuahDurian;
+import models.BuahJeruk;
+import models.BuahKiwi;
+import models.BuahMelon;
+import models.BuahMangga;
+import models.BuahSemangka;
+
 /**
  *
  * @author asus4

@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package tk2teamone;
+package views;
 
+import models.BuahKiwi;
 import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.ui.FlatLineBorder;
 import java.awt.Color;
@@ -16,21 +17,21 @@ import javax.swing.UnsupportedLookAndFeelException;
  *
  * @author Al
  */
-public class FrameJeruk extends javax.swing.JFrame {
+public class FrameKiwi extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrameJeruk.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrameKiwi.class.getName());
 
     /**
      * Creates new form FrameDurian
      */
-    public FrameJeruk() {
+    public FrameKiwi() {
         initComponents();
         reset();
         panelLengkung(jPanel3);
         panelLengkung(jPanel2);
     }
     
-    BuahJeruk bj = new BuahJeruk();
+    BuahKiwi bk = new BuahKiwi();
     
     
     void reset(){
@@ -112,13 +113,13 @@ public class FrameJeruk extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(24, 58, 92));
-        jLabel5.setText("Masukkan informasi buah Jeruk");
+        jLabel5.setText("Masukkan informasi buah kiwi");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 34)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(24, 58, 92));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Jeruk");
+        jLabel1.setText("KIWI");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, 40));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
@@ -128,7 +129,7 @@ public class FrameJeruk extends javax.swing.JFrame {
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 90, -1));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2teamone/icon/jeruk.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2teamone/icon/kiwi.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 60, 50));
 
         btnKembali.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -408,15 +409,15 @@ public class FrameJeruk extends javax.swing.JFrame {
 
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
         // TODO add your handling code here:
-        bj.setJenis(tJenis.getText());
-        bj.setWarna(tWarna.getText());
-        bj.setRasa(tRasa.getText());
-        bj.setHarga(tHarga.getText());
+        bk.setJenis(tJenis.getText());
+        bk.setWarna(tWarna.getText());
+        bk.setRasa(tRasa.getText());
+        bk.setHarga(tHarga.getText());
         
-        oJenis.setText(bj.getJenis());
-        oWarna.setText(bj.getWarna());
-        oRasa.setText(bj.getRasa());
-        oHarga.setText("Rp." + bj.getHarga());
+        oJenis.setText(bk.getJenis());
+        oWarna.setText(bk.getWarna());
+        oRasa.setText(bk.getRasa());
+        oHarga.setText("Rp." + bk.getHarga());
     }//GEN-LAST:event_btnSimpanActionPerformed
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
@@ -434,26 +435,26 @@ public class FrameJeruk extends javax.swing.JFrame {
 
     private void tJenisKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tJenisKeyReleased
         // TODO add your handling code here:
-        bj.setJenis(tJenis.getText());
-        oJenis.setText(bj.getJenis());
+        bk.setJenis(tJenis.getText());
+        oJenis.setText(bk.getJenis());
     }//GEN-LAST:event_tJenisKeyReleased
 
     private void tWarnaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tWarnaKeyReleased
         // TODO add your handling code here:
-        bj.setWarna(tWarna.getText());
-        oWarna.setText(bj.getWarna());
+        bk.setWarna(tWarna.getText());
+        oWarna.setText(bk.getWarna());
     }//GEN-LAST:event_tWarnaKeyReleased
 
     private void tRasaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tRasaKeyReleased
         // TODO add your handling code here:
-        bj.setRasa(tRasa.getText());
-        oRasa.setText(bj.getRasa());
+        bk.setRasa(tRasa.getText());
+        oRasa.setText(bk.getRasa());
     }//GEN-LAST:event_tRasaKeyReleased
 
     private void tHargaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tHargaKeyReleased
         // TODO add your handling code here:
-        bj.setHarga(tHarga.getText());
-        oHarga.setText("Rp." + bj.getHarga());
+        bk.setHarga(tHarga.getText());
+        oHarga.setText("Rp." + bk.getHarga());
     }//GEN-LAST:event_tHargaKeyReleased
 
     /**
@@ -473,7 +474,7 @@ public class FrameJeruk extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new FrameJeruk().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new FrameKiwi().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
