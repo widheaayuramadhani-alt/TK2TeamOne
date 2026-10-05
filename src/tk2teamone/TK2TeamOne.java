@@ -28,6 +28,7 @@ public class TK2TeamOne {
         Mangga.setWarna("Hijau");
         Mangga.setRasa("Manis");
         Mangga.setHarga("Rp20.000/kg");
+       // Mangga.jenis="madu";
         System.out.println("=====MANGGA - DHEA=====");
         System.out.println("Jenis : " + Mangga.getJenis());
         System.out.println("Warna : " + Mangga.getWarna());
