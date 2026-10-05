@@ -54,6 +54,7 @@ public class TK2TeamOne {
         Melon.setWarna("Kuning");
         Melon.setRasa("Manis");
         Melon.setHarga("Rp30.000/kg");
+        //Melon.jenis="Cenery";
         System.out.println("=====MELON - NAJWA=====");
         System.out.println("Jenis : " + Melon.getJenis());
         System.out.println("Warna : " + Melon.getWarna());
