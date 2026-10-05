@@ -9,10 +9,10 @@ package models;
  * @author X1 Carbon
  */
 public class BuahMelon {
-    String jenis;
-    String warna;
-    String rasa;
-    String harga;
+    private String jenis;
+    private String warna;
+    private String rasa;
+    private String harga;
     
     public BuahMelon (){
         this.jenis = "";
