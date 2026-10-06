@@ -9,10 +9,10 @@ package models;
  * @author macbookprom12020
  */
 public class BuahKiwi {
-    String jenis;
-    String warna;
-    String rasa;
-    String harga;
+    public String jenis;
+    public String warna;
+    public String rasa;
+    public String harga;
 
     public String getJenis() {
         return jenis;
