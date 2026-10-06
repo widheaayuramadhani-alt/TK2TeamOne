@@ -9,10 +9,10 @@ package models;
  * @author ThinkPad X13
  */
 public class BuahJeruk {
-    String jenis;
-    String warna;
-    String rasa;
-    String harga;
+    public String jenis;
+    public String warna;
+    public String rasa;
+    public String harga;
     
     public BuahJeruk() {
         this.jenis = "";

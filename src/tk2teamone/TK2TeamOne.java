@@ -42,6 +42,7 @@ public class TK2TeamOne {
         Jeruk.setWarna("Hijau kekuningan");
         Jeruk.setRasa("Manis");
         Jeruk.setHarga("Rp65.000/kg");
+        Jeruk.jenis = "Jeruk siam";
         System.out.println("=====JERUK - ATHOIL=====");
         System.out.println("Jenis : " + Jeruk.getJenis());
         System.out.println("Warna : " + Jeruk.getWarna());
