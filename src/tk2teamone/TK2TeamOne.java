@@ -93,6 +93,7 @@ public class TK2TeamOne {
         Durian.setWarna("Kuning Keemasan");
         Durian.setRasa("Manis Pahit");
         Durian.setHarga("Rp250.000/Kg");
+        //Durian.jenis = "Durian Lokal";
         System.out.println("======DURIAN - ALA=======");
         System.out.println("Jenis : "+ Durian.getJenis());
         System.out.println("Warna : "+ Durian.getWarna());
