@@ -70,6 +70,7 @@ public class TK2TeamOne {
         Kiwi.setWarna("Kuning Keemasan");
         Kiwi.setRasa("Manis");
         Kiwi.setHarga("25.000/Buah");
+        Kiwi.jenis = "Kiwi hijau";
         System.out.println("=====KIWI - TONY=====");
         System.out.println("Jenis : " + Kiwi.getJenis());
         System.out.println("Warna : " + Kiwi.getWarna());
