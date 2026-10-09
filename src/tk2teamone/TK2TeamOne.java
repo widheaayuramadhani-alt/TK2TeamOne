@@ -84,6 +84,7 @@ public class TK2TeamOne {
         Semangka.setWarna("Merah");
         Semangka.setRasa("Manis berair");
         Semangka.setHarga("Rp20.000/Kg");
+        //Semangka.jenis = "Semangka Lokal";
         System.out.println("=====SEMANGKA - HAMDAN=====");
         System.out.println("Jenis : "+ Semangka.getJenis());
         System.out.println("Warna : "+ Semangka.getWarna());

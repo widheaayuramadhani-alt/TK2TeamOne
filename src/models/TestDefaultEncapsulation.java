@@ -16,6 +16,11 @@ public class TestDefaultEncapsulation {
          
          Durian.jenis = "Durian Lokal";
          System.out.println("Jenis = " + Durian.getJenis());
+         
+         BuahSemangka Semangka = new BuahSemangka();
+         
+         Semangka.jenis = "Semangka Lokal";
+         System.out.println("Jenis = " + Semangka.getJenis());
     }
     
 }
