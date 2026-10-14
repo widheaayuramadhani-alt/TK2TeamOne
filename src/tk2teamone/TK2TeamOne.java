@@ -51,7 +51,7 @@ public class TK2TeamOne {
         System.out.println("====================\n");
         
         //Bagian Najwa
-        BuahMelon Melon = new BuahMelon("Melon sakata","Hijau","Manis","Rp25.000/kg");
+        BuahMelon Melon = new BuahMelon();
         Melon.setJenis("Cenery");
         Melon.setWarna("Kuning");
         Melon.setRasa("Manis");
