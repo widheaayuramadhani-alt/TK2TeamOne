@@ -8,58 +8,15 @@ package models;
  *
  * @author X1 Carbon
  */
-public class BuahMelon {
-    private String jenis;
-    private String warna;
-    private String rasa;
-    private String harga;
-    
-    public BuahMelon (){
-        this.jenis = "";
-        this.warna = "";
-        this.rasa = "";
-        this.harga = "";
+public class BuahMelon extends Buah {
+    public BuahMelon(){
+        super();
     }
 
     public BuahMelon(String jenis, String warna, String rasa, String harga) {
-        this.jenis = jenis;
-        this.warna = warna;
-        this.rasa = rasa;
-        this.harga = harga;
+        super(jenis, warna, rasa, harga);
     }
 
-    public String getJenis() {
-        return jenis;
-    }
-
-    public void setJenis(String jenis) {
-        this.jenis = jenis;
-    }
-
-    public String getWarna() {
-        return warna;
-    }
-
-    public void setWarna(String warna) {
-        this.warna = warna;
-    }
-
-    public String getRasa() {
-        return rasa;
-    }
-
-    public void setRasa(String rasa) {
-        this.rasa = rasa;
-    }
-
-    public String getHarga() {
-        return harga;
-    }
-
-    public void setHarga(String harga) {
-        this.harga = harga;
-    }
-    
     
 }
    
