@@ -79,7 +79,7 @@ public class TK2TeamOne {
         System.out.println("=======================\n");
         
         // Bagian Hamdan
-        BuahSemangka Semangka= new BuahSemangka("Inul", "Merah", "Manis berair", "Rp20.000/Kg");
+        BuahSemangka Semangka= new BuahSemangka();
         Semangka.setJenis("Semangka Merah");
         Semangka.setWarna("Merah");
         Semangka.setRasa("Manis berair");

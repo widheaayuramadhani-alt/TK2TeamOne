@@ -11,10 +11,7 @@ package models;
 public class BuahSemangka extends Buah{
     
     public BuahSemangka(){
-        super();
+        
     }
     
-    public BuahSemangka(String jenis, String warna, String rasa, String harga){
-        super(jenis, warna, rasa, harga);
-    }
 }
