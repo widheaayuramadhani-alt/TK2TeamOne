@@ -93,7 +93,7 @@ public class TK2TeamOne {
         System.out.println("=======================\n");
         
         // Bagian Ala
-        BuahDurian Durian = new BuahDurian("Durian Montong", "Kuning Gading Pekat", "Dominan Manis", "Rp95.000/Kg");
+        BuahDurian Durian = new BuahDurian();
         Durian.setJenis("Durian Musang King");
         Durian.setWarna("Kuning Keemasan");
         Durian.setRasa("Manis Pahit");
