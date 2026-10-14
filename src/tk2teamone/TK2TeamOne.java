@@ -37,7 +37,7 @@ public class TK2TeamOne {
         System.out.println("=======================\n");
         
         //Bagian Athoil
-        BuahJeruk Jeruk = new BuahJeruk("Jeruk nipis","Hijau","Asam","Rp7.000/kg");
+        BuahJeruk Jeruk = new BuahJeruk();
         Jeruk.setJenis("Bali");
         Jeruk.setWarna("Hijau kekuningan");
         Jeruk.setRasa("Manis");
