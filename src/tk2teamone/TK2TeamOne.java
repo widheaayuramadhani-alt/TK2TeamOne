@@ -65,7 +65,7 @@ public class TK2TeamOne {
         System.out.println("=======================\n");
         
         //Bagian Tony
-        BuahKiwi Kiwi = new BuahKiwi("Green Kiwi", "Hijau", "Manis Asam", "Rp15.000/Buah");
+        BuahKiwi Kiwi = new BuahKiwi();
         Kiwi.setJenis("Kiwi Gold");
         Kiwi.setWarna("Kuning Keemasan");
         Kiwi.setRasa("Manis");
