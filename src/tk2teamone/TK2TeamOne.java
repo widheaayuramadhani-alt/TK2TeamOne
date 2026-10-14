@@ -23,7 +23,7 @@ public class TK2TeamOne {
     public static void main(String[] args) {
         // TODO code application logic here
         //Bagian Dhea
-        BuahMangga Mangga =  new BuahMangga("Mangga Madu","Kuning","Manis","Rp30.000/kg");
+        BuahMangga Mangga =  new BuahMangga();
         Mangga.setJenis("Gadung");
         Mangga.setWarna("Hijau");
         Mangga.setRasa("Manis");
